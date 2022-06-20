@@ -1,6 +1,16 @@
 html {
   font-size: 16px;
 }
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
 
 body,
 html {
@@ -8,9 +18,8 @@ html {
 }
 
 body {
-  font-size: 16px;
   font-family: "Play", Arial, Helvetica, sans-serif;
-  line-height: 18.51px;
+  line-height: rem(18.51px);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -21,13 +30,13 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto;
   position: relative;
 }

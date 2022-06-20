@@ -3,11 +3,15 @@
 } 
 
 .headline__title {
-  margin-bottom: 25px;
+  margin-bottom: rem(25px);
 }
 
 .headline__subtitle {
   color: #666;
   padding: 0 18%;
-  margin-bottom: 60px;
+  margin-bottom: rem(60px);
+
+  @media (max-width: 480px) {
+    padding: 0 5%;
+  }
 }

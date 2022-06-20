@@ -1,11 +1,11 @@
 .feature {
   display: flex;
-  min-width: 200px;
+  min-width: rem(200px);
 }
 
 .feature__icon {
-  width: 45px;
-  margin-right: 7px;
+  width: rem(45px);
+  margin-right: rem(7px);
 }
 
 .feature__img {
@@ -14,6 +14,6 @@
 }
 
 .feature__text {
-  font-size: 16px;
+  font-size: rem(16px);
   width: 50%;
 }

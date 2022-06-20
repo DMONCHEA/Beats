@@ -7,11 +7,20 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: rem(22px);
 }
-.radio--checlbox .radio__visible {
-  border-radius: 0;
+@media phones {
+  .radio {
+    margin-bottom: rem(10px);
+  }
 }
-.radio--checlbox .radio__visible::before {
+.radio--checkbox .radio__visible {
+  border-radius: rem(5px);
+}
+.radio--checkbox .radio__visible::before {
   background: url("../../img/Ve.png") center center no-repeat;
 }
 
@@ -23,16 +32,17 @@
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: rem(26px);
+  height: rem(26px);
   position: relative;
   border-radius: 50%;
   background: #fff;
+  margin-right: rem(8px);
 }
 .radio__visible::before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: rem(14px);
+  height: rem(14px);
   background: #E01F3D;
   border-radius: 50%;
   position: absolute;
