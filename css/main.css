@@ -560,7 +560,7 @@ img {
   position: relative;
 }
 .benefits-section:before {
-  content: url(./img/vec.png);
+  content: url(../../img/vec.png);
   position: absolute;
   bottom: 0.0625rem;
   left: 4.375rem;
