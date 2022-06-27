@@ -32,3 +32,9 @@ $red: #E01F3D;
     }
   }
 }
+
+.shop__btn {
+  @media (max-width: 768px) {
+    padding: rem(24px) rem(46px);
+  }
+}
