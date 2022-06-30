@@ -77,22 +77,22 @@
 .shops__text {
   color: #666;
   margin-bottom: rem(36px);
-  width: 85%;
+  max-width: 85%;
 
   @media (max-width: 768px) {
-    margin-left: rem(10px);
+    margin-left: 0.75rem;
     font-size: rem(17px);
-    width: 41.375rem;
+    min-width: 90%;
   }
 
   @media (max-width: 480px) {
-    display: none;
+    
   }
 }
 
 .offer__features {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: rem(24px);
 
   @media (max-width: 768px) {
     justify-content: center;

@@ -99,7 +99,7 @@ img {
 
 .hero {
   background-color: #F5F5F5;
-  height: 70vh;
+  height: 67vh;
   min-height: 40.75rem;
   color: black;
   position: relative;
@@ -190,7 +190,7 @@ img {
 
 .hero__title-desc {
   font-size: 1.125rem;
-  margin-bottom: 3.3125rem;
+  margin-bottom: 2.3125rem;
   padding-right: 13%;
   line-height: 1.4;
   width: 92%;
@@ -339,6 +339,7 @@ img {
   margin-bottom: 2.3125rem;
   text-align: center;
   text-transform: uppercase;
+  line-height: 2.5rem;
 }
 @media (max-width: 480px) {
   .section__title {
@@ -443,9 +444,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+@media (max-width: 769px) {
+  .form__btns {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .benefits {
@@ -813,8 +821,8 @@ img {
 }
 
 .menu {
-  margin: 0 30px;
-  padding-top: 5px;
+  margin: 0 1.875rem;
+  padding-top: 0.3125rem;
 }
 @media (max-width: 768px) {
   .menu {
@@ -838,7 +846,7 @@ img {
 
 .menu__item {
   margin-right: 1.625rem;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -860,10 +868,18 @@ img {
   margin-top: 0.25rem;
 }
 
+.ph {
+  margin-top: 0.7rem;
+}
+
 .phone-number__icon-elem {
   width: 0.875rem;
   height: 0.875rem;
   margin-right: 0.375rem;
+}
+
+.pj {
+  margin-top: 0.3125rem;
 }
 
 .phone-number__text {
@@ -968,8 +984,8 @@ img {
 }
 
 .hamburger {
-  width: 24px;
-  height: 20px;
+  width: 1.5rem;
+  height: 1.25rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1015,14 +1031,54 @@ img {
   display: flex;
   vertical-align: middle;
   margin-right: 0.625rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .socials__item:last-child {
   margin-right: 0;
 }
 
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.social__link:hover {
+  -webkit-filter: brightness(0.1);
+          filter: brightness(0.1);
+}
+
+.socials__item--icon--vk .social__link {
+  background-image: url(../../img/F_vk.png);
+}
+
+.socials__item--icon--fb .social__link {
+  background: url(../../img/F_face.png);
+  -webkit-filter: opacity(0.32);
+          filter: opacity(0.32);
+}
+.socials__item--icon--fb .social__link:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.socials__item--icon--in .social__link {
+  background: url(../../img/F_in.png);
+}
+
+.socials__item--icon--tg .social__link {
+  background-image: url(../../img/F_tg.png);
+}
+
 .contacts {
   font-style: normal;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 @media (max-width: 480px) {
   .contacts {
@@ -1135,26 +1191,20 @@ img {
 .shops__text {
   color: #666;
   margin-bottom: 2.25rem;
-  width: 85%;
+  max-width: 85%;
 }
 @media (max-width: 768px) {
   .shops__text {
-    margin-left: 0.625rem;
+    margin-left: 0.75rem;
     font-size: 1.0625rem;
-    width: 41.375rem;
+    min-width: 90%;
   }
 }
-@media (max-width: 480px) {
-  .shops__text {
-    display: none;
-  }
-}
-
 .offer__features {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 @media (max-width: 768px) {
   .offer__features {

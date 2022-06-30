@@ -11,8 +11,42 @@
   display: flex;
   vertical-align: middle;
   margin-right: rem(10px);
+  transition: 0.5s;
   
   &:last-child {
     margin-right: 0;
   }
+}
+
+.social__link {
+	display: flex;
+	text-decoration: none;
+	width: 30px;
+	height: 30px;
+	transition: 0.5s;
+}
+
+.social__link:hover {
+  filter: brightness(0.1);
+}
+
+.socials__item--icon--vk .social__link {
+	background-image: url(../../img/F_vk.png);
+}
+
+.socials__item--icon--fb .social__link {
+	background: url(../../img/F_face.png);
+  filter: opacity(0.32);
+
+  &:hover {
+    filter: none;
+  }
+}
+
+.socials__item--icon--in .social__link {
+	background: url(../../img/F_in.png);
+}
+
+.socials__item--icon--tg .social__link {
+	background-image: url(../../img/F_tg.png);
 }
